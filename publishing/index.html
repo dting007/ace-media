@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publishing — Ace Media</title>
+  <meta name="description" content="Ace Media Publishing — practical books for people ready to close the gap between where they are and where they could be.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-brand">ACE <span>MEDIA</span></a>
+    <ul class="nav-links">
+      <li><a href="../publishing/index.html" style="color:var(--gold);">Publishing</a></li>
+      <li><a href="../speaking/index.html">Speaking</a></li>
+      <li><a href="../ai/index.html">HXI</a></li>
+      <li><a href="../software/index.html">Software</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" style="min-height:60vh;">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Division 01 · Publishing</p>
+      <h1 class="hero-title" style="font-size:clamp(2.8rem,6vw,5rem);">
+        Books built to<br><em>change things.</em>
+      </h1>
+      <p class="hero-sub">
+        Practical, honest, and built for real people — not for the shelf.
+        Every title we publish carries one non-negotiable standard: it has to work.
+      </p>
+    </div>
+  </section>
+
+  <!-- FEATURED TITLE -->
+  <div class="book-strip">
+    <div class="book-strip-inner">
+      <div class="book-cover-placeholder fade-in">
+        <div class="book-cover-title">UNBREAKABLE<br>ETHIC</div>
+        <div class="book-cover-sub">Unlock Your Advantage</div>
+        <div class="book-cover-author">Daniel Ting</div>
+      </div>
+      <div class="book-info fade-in">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Featured Title · 2026</p>
+        <h2>Unbreakable<br><em>Ethic</em></h2>
+        <p>
+          Build Your Discipline, Own Your Story, Unlock Your Empire.
+          A compact, no-excuses playbook for anyone who knows the gap between
+          where they are and where they could be isn't closing by itself.
+        </p>
+        <div class="btn-group">
+          <a href="unbreakableethic/index.html" class="btn-primary">About the Book</a>
+          <a href="unbreakableethic/index.html#buy" class="btn-outline">Get Your Copy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FUTURE TITLES PLACEHOLDER -->
+  <section style="background:var(--soft-bg);">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-in">On the Horizon</p>
+      <h2 class="section-title fade-in">More titles<br><em>in development.</em></h2>
+      <p class="section-body fade-in">
+        Unbreakable Ethic is the first of a series of practical, no-filler publications
+        from Ace Media. Future titles will extend the same foundational framework
+        across different domains of life and work. Details to follow.
+      </p>
+      <div style="display:inline-block;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mid);border:1px solid var(--off-white);padding:0.6rem 1.5rem;" class="fade-in">
+        More Titles Coming
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPORATE -->
+  <section style="background:var(--white);">
+    <div class="section-inner">
+      <p class="section-eyebrow fade-in">For Organisations</p>
+      <h2 class="section-title fade-in">Bulk orders &<br><em>corporate programs.</em></h2>
+      <p class="section-body fade-in">
+        Forward-thinking organisations use Ace Media titles to build high-performance
+        cultures — because a team with unbreakable ethic doesn't just perform better.
+        It compounds. Bulk pricing, author Q&A sessions, and custom programs available.
+      </p>
+      <a href="../contact/index.html" class="btn-primary fade-in">Enquire Now</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">ACE <span>MEDIA</span></div>
+        <p style="font-size:0.78rem;color:rgba(245,243,238,0.3);margin-top:0.5rem;">publishing@ace-media.org</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../speaking/index.html">Speaking & Coaching</a>
+        <a href="../contact/index.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Ace Media. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

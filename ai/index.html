@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HXI — Human X Intelligence · Ace Media</title>
+  <meta name="description" content="HXI — Human X Intelligence. AI consultation that keeps the human at the centre. Coming soon from Ace Media.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    body { background: var(--hxi-teal); }
+    .hxi-page-hero {
+      min-height: 100vh;
+      background: var(--hxi-teal);
+      display: flex;
+      align-items: center;
+      padding: 8rem 4rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hxi-page-hero::before {
+      content: '';
+      position: absolute;
+      top: -20%; right: -10%;
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(26,188,176,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hxi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: rgba(26,188,176,0.15);
+      margin-top: 3rem;
+    }
+    .hxi-card {
+      background: rgba(11,77,74,0.6);
+      padding: 2rem;
+    }
+    .hxi-card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .hxi-card-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+    .hxi-card-body {
+      font-size: 0.82rem;
+      color: rgba(245,243,238,0.5);
+      line-height: 1.6;
+    }
+    @media (max-width: 700px) {
+      .hxi-page-hero { padding: 7rem 1.5rem 3rem; }
+      .hxi-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav style="background:rgba(11,77,74,0.96);border-bottom-color:rgba(26,188,176,0.15);">
+    <a href="../index.html" class="nav-brand" style="color:var(--hxi-accent);">ACE <span style="color:rgba(245,243,238,0.4);">MEDIA</span></a>
+    <ul class="nav-links">
+      <li><a href="../publishing/index.html">Publishing</a></li>
+      <li><a href="../speaking/index.html">Speaking</a></li>
+      <li><a href="../ai/index.html" style="color:var(--hxi-accent);">HXI</a></li>
+      <li><a href="../software/index.html">Software</a></li>
+      <li><a href="../contact/index.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hxi-page-hero">
+    <div style="max-width:1200px;margin:0 auto;width:100%;">
+      <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--hxi-accent);margin-bottom:1.5rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.2s;">
+        Division 03 · Launching Soon
+      </p>
+      <h1 style="font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,6rem);font-weight:300;color:var(--white);line-height:1.05;margin-bottom:1rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.4s;">
+        Human X<br><em style="color:var(--hxi-accent);">Intelligence.</em>
+      </h1>
+      <p style="font-size:1rem;color:rgba(245,243,238,0.55);max-width:540px;line-height:1.8;margin-bottom:2.5rem;opacity:0;animation:fadeUp 0.8s ease forwards 0.6s;">
+        The organisations that will thrive in the age of AI are not the ones that
+        replace their people with algorithms. They are the ones that equip their
+        people to lead alongside them. HXI is how that happens.
+      </p>
+      <div style="opacity:0;animation:fadeUp 0.8s ease forwards 0.8s;">
+        <a href="../contact/index.html" style="display:inline-block;padding:0.85rem 2rem;border:1px solid rgba(26,188,176,0.4);color:var(--hxi-accent);font-size:0.78rem;font-weight:400;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;transition:border-color 0.2s;">Register Interest →</a>
+      </div>
+
+      <div class="hxi-grid" style="opacity:0;animation:fadeUp 0.8s ease forwards 1s;">
+        <div class="hxi-card">
+          <div class="hxi-card-icon">⬡</div>
+          <div class="hxi-card-title">AI Strategy & Readiness</div>
+          <div class="hxi-card-body">Organisational assessment and intelligent roadmap development for the AI transition.</div>
+        </div>
+        <div class="hxi-card">
+          <div class="hxi-card-icon">◈</div>
+          <div class="hxi-card-title">Human-Centred Implementation</div>
+          <div class="hxi-card-body">Integration that keeps people in control of the outcome — not the other way around.</div>
+        </div>
+        <div class="hxi-card">
+          <div class="hxi-card-icon">◎</div>
+          <div class="hxi-card-title">Team & Leadership Upskilling</div>
+          <div class="hxi-card-body">Building the capability to work with AI thoughtfully — not just to use it reactively.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background:rgba(7,23,48,0.95);">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">ACE <span>MEDIA</span></div>
+        <p style="font-size:0.78rem;color:rgba(245,243,238,0.3);margin-top:0.5rem;">publishing@ace-media.org</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../publishing/index.html">Publishing</a>
+        <a href="../contact/index.html">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Ace Media. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ace Media</title>
+  <meta name="description" content="Get in touch with Ace Media — publishing enquiries, bulk orders, speaking bookings, and HXI consultation.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      background: var(--off-white);
+      margin-top: 3rem;
+    }
+    .contact-card {
+      background: var(--white);
+      padding: 2.5rem;
+      border-top: 3px solid var(--off-white);
+      transition: border-color 0.2s;
+    }
+    .contact-card:hover { border-color: var(--gold); }
+    .contact-card-label {
+      font-size: 0.68rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 0.75rem;
+    }
+    .contact-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+    }
+    .contact-card-body {
+      font-size: 0.85rem;
+      color: #6A6860;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+    .contact-email {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--navy);
+      text-decoration: none;
+      border-bottom: 1px solid var(--navy);
+      padding-bottom: 2px;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .contact-email:hover { color: var(--gold); border-color: var(--gold); }
+    @media (max-width: 700px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html" class="nav-brand">ACE <span>MEDIA</span></a>
+    <ul class="nav-links">
+      <li><a href="../publishing/index.html">Publishing</a></li>
+      <li><a href="../speaking/index.html">Speaking</a></li>
+      <li><a href="../ai/index.html">HXI</a></li>
+      <li><a href="../software/index.html">Software</a></li>
+      <li><a href="../contact/index.html" style="color:var(--gold);">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" style="min-height:55vh;">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Get in Touch</p>
+      <h1 class="hero-title" style="font-size:clamp(2.8rem,6vw,5rem);">
+        Let's talk about<br><em>what you need.</em>
+      </h1>
+      <p class="hero-sub">
+        One address. All enquiries. We'll direct your message to the right person
+        and respond within two business days.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT CARDS -->
+  <section style="background:var(--white);">
+    <div class="section-inner">
+      <div class="contact-grid fade-in">
+
+        <div class="contact-card">
+          <div class="contact-card-label">Books & Publishing</div>
+          <div class="contact-card-title">Individual Book Enquiries</div>
+          <div class="contact-card-body">
+            Questions about Unbreakable Ethic, format availability, delivery,
+            or upcoming publications. We'd love to hear from you.
+          </div>
+          <a href="mailto:publishing@ace-media.org" class="contact-email">publishing@ace-media.org</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-label">Bulk Orders · Corporate</div>
+          <div class="contact-card-title">Team & Organisation Orders</div>
+          <div class="contact-card-body">
+            Bulk purchases for onboarding, leadership development, or team
+            culture programs. We'll send you a tailored proposal including
+            pricing tiers and available inclusions.
+          </div>
+          <a href="mailto:publishing@ace-media.org?subject=Bulk Order Enquiry" class="contact-email">publishing@ace-media.org</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-label">Speaking & Workshops</div>
+          <div class="contact-card-title">Book Daniel Ting</div>
+          <div class="contact-card-body">
+            Keynotes, half-day workshops, full-day intensives, and ongoing
+            coaching programs. Available globally — in-person and virtual.
+            Please include your event date, audience size, and location.
+          </div>
+          <a href="mailto:publishing@ace-media.org?subject=Speaking Enquiry" class="contact-email">publishing@ace-media.org</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-label">HXI · AI Consultation</div>
+          <div class="contact-card-title">Human X Intelligence</div>
+          <div class="contact-card-body">
+            AI strategy, readiness assessment, human-centred implementation,
+            and team upskilling. HXI is launching soon — register your interest
+            now to be first in the queue.
+          </div>
+          <a href="mailto:publishing@ace-media.org?subject=HXI Enquiry" class="contact-email">publishing@ace-media.org</a>
+        </div>
+
+      </div>
+
+      <!-- DIRECT EMAIL -->
+      <div style="margin-top:3rem;padding:3rem;background:var(--navy);text-align:center;" class="fade-in">
+        <p style="font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;">Direct Contact</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--white);margin-bottom:0.5rem;">
+          publishing@ace-media.org
+        </p>
+        <p style="font-size:0.82rem;color:rgba(245,243,238,0.4);">
+          We respond to all enquiries within two business days.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">ACE <span>MEDIA</span></div>
+        <p style="font-size:0.78rem;color:rgba(245,243,238,0.3);margin-top:0.5rem;">publishing@ace-media.org</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">Home</a>
+        <a href="../publishing/index.html">Publishing</a>
+        <a href="../speaking/index.html">Speaking</a>
+        <a href="../ai/index.html">HXI</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 Ace Media. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
